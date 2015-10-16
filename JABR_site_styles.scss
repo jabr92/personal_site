@@ -5,16 +5,31 @@ $teal: #009B9B;
 body {
     background-color: #009B9B;
     color: #EFFFFE;
-    font-family: nunito;
-    margin: 0;
+    font-family: nunito, sans-serif;
+    margin: 1%;
     font-size: 1em;
+}
+
+div {
+    border-radius: .5em;
+    background-color: $dk-grey;
+}
+
+span {
+    float: left;
+    white-space: nowrap;
+}
+
+a {
+    color: $teal;
+    text-decoration: none;
 }
 
 .top-bar {
     background-color: $dk-grey;
     height: 7vh;
-    margin: 1%;
     z-index: 10;
+    position: relative;
 }
 
 .name-title {
@@ -23,45 +38,40 @@ body {
     width: 30%;
     height: (7vh * .9);
     margin-left: 1%;
-    margin-top: calc(7vh * .05);
 }
 
 .top-button {
-    height: 90%;
+    height: 100%;
     width: 17%;
     text-align: center;
     line-height: calc(7vh * .9);
     float: left;
-    margin-top: calc(7vh * .05);
     border-radius: 4px;
-    border-left: 1px $white;
+    cursor: pointer;
     &:active {
         background-color: $med-grey !important;
     }
     &:hover {
         background-color: darken($dk-grey, 5%);
-        .sub-button {
-            display: block;
-        }
     }
 }
 
-.sub-button {
-    display: none;
-    background-color: $dk-grey;
-    cursor: pointer;
-    padding: 5%;
-    &:active {
-        background-color: darken($dk-grey, 5%) !important;
-    }
-    &:hover {
-        background-color: $med-grey;
-    }
-    >a {
-        height: 100%;
-        width: 100%;
-        text-decoration: none;
-        color: inherit;
+.content {
+    >div {
+        margin-bottom: 1%;
+        >div {
+            >span {
+                width: 96%;
+                padding-left: 2.5%;
+                margin: 1%;
+                font-size: 1.4em;
+                border-bottom: 1px solid $med-grey;
+            }
+            background-color: $dk-grey;
+            >div {
+                margin: 1%;
+            }
+        }
     }
 }
 
@@ -75,12 +85,7 @@ body {
     background-color: $dk-grey;
     display: inline-block;
     text-align: center;
-
-    >i{
+    >i {
         padding: 5%;
     }
-}
-
-.content{
-    z-index: 5;
 }
