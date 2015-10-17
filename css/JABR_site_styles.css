@@ -6,22 +6,29 @@ body {
   font-size: 1em; }
 
 div {
-  border-radius: .5em;
-  background-color: #2B2B2B; }
+  border-radius: .5em; }
 
 span {
-  float: left;
   white-space: nowrap; }
 
 a {
   color: #009B9B;
   text-decoration: none; }
 
+p {
+  margin: 0 1% 1% 0; }
+
+ul {
+  padding-left: 2%;
+  float: left;
+  margin: 0; }
+
 .top-bar {
   background-color: #2B2B2B;
   height: 7vh;
   z-index: 10;
-  position: relative; }
+  position: relative;
+  margin-bottom: 1%; }
 
 .name-title {
   float: left;
@@ -43,18 +50,44 @@ a {
   .top-button:hover {
     background-color: #1e1e1e; }
 
-.content > div {
-  margin-bottom: 1%; }
-  .content > div > div {
+.wide-content > div {
+  float: left;
+  margin-bottom: 1%;
+  width: 100%; }
+  .wide-content > div > div {
+    width: 100%;
+    float: left;
+    margin-bottom: 1%;
     background-color: #2B2B2B; }
-    .content > div > div > span {
-      width: 96%;
-      padding-left: 2.5%;
-      margin: 1%;
+    .wide-content > div > div > span {
+      float: left;
+      width: 96.5%;
+      margin: 1% 2%;
       font-size: 1.4em;
       border-bottom: 1px solid #515151; }
-    .content > div > div > div {
-      margin: 1%; }
+    .wide-content > div > div > div {
+      width: 96%;
+      float: left;
+      margin: 0% 2% 1% 2%; }
+      .wide-content > div > div > div > span {
+        margin-bottom: 1%;
+        width: 100%; }
+
+.life-map {
+  width: 92vw;
+  height: 61vw; }
+
+.grid-content > div {
+  float: left; }
+  .grid-content > div > div {
+    float: left;
+    display: inline-block;
+    margin: 1.5vh 1.5vw;
+    width: 45vw;
+    height: 45vh;
+    background-color: #2B2B2B;
+    text-align: center;
+    font-size: 3em; }
 
 .placeholder {
   width: 20%;

@@ -22,6 +22,8 @@ body {
   top: 100vh; }
   .buttons > a {
     color: inherit; }
+    .buttons > a:hover {
+      color: #009B9B; }
     .buttons > a > div {
       display: inline-block;
       float: left;

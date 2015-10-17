@@ -4,12 +4,11 @@
 <head>
     <title>John Arin Ransom</title>
     <link rel="shortcut icon" href="images/my_favicon.png">
-
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
     <link href='https://fonts.googleapis.com/css?family=Nunito&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="css/JABR_site_styles.css">
     <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
-    <script src="scripts.js"></script>
+    <script src="main_scripts.js"></script>
 </head>
 
 <body>
@@ -30,47 +29,60 @@
             <span>Connect</span>
         </div>
     </div>
-    <div class="content">
+    <div class="wide-content">
         <div class="about">
             <div class="personal">
                 <span>Personal</span>
-                <ul class="fun-facts">
-                    Fun Facts:
-                    <li>I usually introduce myself with an explanation: "John Arin. Both parts are my first name." It's a lot easier in Russia where everyone goes by two names.</li>
-                    <li>I have had one fourth as many birthdays as I am years old (rounded down).</li>
-                    <li>I read the fourth Harry Potter book from cover to cover without stopping.</li>
-                    <li>My highest ability scores would be intelligence and constitution, my lowest dexterity and charisma.</li>
-                </ul>
+                <div class="wrapper">
+                    <p>I was born and raised in Redding, California. I attended university and continue to live in Berkeley, CA. My interests include: hiking, cooking, gardening, games, coding and tech, travel, photography, and Russian language/culture.</p>
+                    <span>Fun Facts:</span>
+                    <ul class="fun-facts">
+                        <li>I usually introduce myself with an explanation: "John Arin. Both parts are my first name." It's a lot easier in Russia where everyone goes by two names.</li>
+                        <li>I have had one fourth as many birthdays as I am years old (rounded down).</li>
+                        <li>I read the fourth Harry Potter book from cover to cover without stopping.</li>
+                        <li>My highest ability scores would be intelligence and constitution, my lowest dexterity and charisma.</li>
+                    </ul>
+                </div>
             </div>
             <div class="education">
                 <span>Education</span>
-                <p>Words and stuff to take up space.
+                <div class="wrapper">
+                    <p>Words and stuff to take up space.
+                </div>
             </div>
             <div class="experience">
                 <span>Experience</span>
-                <p> Blah.
+                <div class="wrapper">
+                    <p> Blah.
+                </div>
             </div>
         </div>
         <div class="cool-stuff">
-            <span>Cool Stuff</span>
-            <p>A collection of things I've spent my time on that I think are worth sharing.
-                <div class="life-map">
-                    <p>My digital version of pins on a wall map.</p>
-                    <!-- <iframe src="https://www.google.com/maps/d/u/0/embed?mid=zFO3e2HRfyks.kdav9FcBfvRk"></iframe> -->
+            <div class="life-map-container">
+                <span>Life Map</span>
+                <div class="wrapper">
+                    <p>My digital version of pins on a wall map:</p>
+                    <iframe class="life-map" src="https://www.google.com/maps/d/u/0/embed?mid=zFO3e2HRfyks.kdav9FcBfvRk"></iframe>
                 </div>
-                <div class="tabd">
-                    <img href="/images/tabd_logo.png"></img>
+            </div>
+            <div class="tabd">
+                <span>Tabd</span>
+                <div class="wrapper">
                     <p><a href="http://tabdextension.com" target="_blank">Tabd</a> is a novel peer-to-peer content sharing app. Gone are the days of sending people links; share content directly instead! It is currently available on the <a href="https://chrome.google.com/webstore/detail/tabd/gfijjccdjccoaaalhfkobmdaneellnba" target="_blank">Chrome Web Store</a> and is being developed for Android. I am learning a lot about writing and implementing code from <a href="http://www.avi.press" target="_blank">Avi Press</a> while helping build it.</p>
                 </div>
+            </div>
         </div>
+    </div>
+    <div class="grid-content">
         <div class="photography">
-            <span>About</span>
-            <p>I use photography mainly as a means to keep a visual journal of my travels throughout the world.</p>
-            <img href="images/default.jpg"></img>
+            <div>Landscape</div>
+            <div>Miscellaneous</div>
         </div>
         <div class="connect">
-            <span>Connect</span>
-            <div>Facebook</div>
+            <div><i class="fa fa-facebook-square"></i><br><span>Facebook</span></div>
+            <div><i class="fa fa-linkedin-square"></i><br><span>LinkedIn</span></div>
+            <div><i class="fa fa-github-square"></i><br><span>GitHub</span></div>
+            <div><i class="fa fa-envelope"></i><br><span>Email</span></div>
         </div>
     </div>
     <div class="placeholder">
@@ -78,5 +90,6 @@
         <br>
         <i class="fa fa-spinner fa-pulse fa-3x"></i>
         <br> This site requires javascript to display properly.
+    </div>
     </div>
 </body>

@@ -26,6 +26,9 @@ body {
     top: 100vh;
     >a {
         color: inherit;
+        &:hover{
+        	color: $teal;
+        }
         >div {
             display: inline-block;
             float: left;

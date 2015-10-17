@@ -1,5 +1,4 @@
 @import "colors";
-
 body {
     background-color: #009B9B;
     color: $white;
@@ -10,11 +9,9 @@ body {
 
 div {
     border-radius: .5em;
-    background-color: $dk-grey;
 }
 
 span {
-    float: left;
     white-space: nowrap;
 }
 
@@ -23,11 +20,22 @@ a {
     text-decoration: none;
 }
 
+p {
+    margin: 0 1% 1% 0;
+}
+
+ul {
+    padding-left: 2%;
+    float: left;
+    margin: 0;
+}
+
 .top-bar {
     background-color: $dk-grey;
     height: 7vh;
     z-index: 10;
     position: relative;
+    margin-bottom: 1%;
 }
 
 .name-title {
@@ -54,21 +62,53 @@ a {
     }
 }
 
-.content {
+.wide-content {
     >div {
+        float: left;
         margin-bottom: 1%;
+        width: 100%;
         >div {
+            width: 100%;
+            float: left;
+            margin-bottom: 1%;
+            background-color: $dk-grey;
             >span {
-                width: 96%;
-                padding-left: 2.5%;
-                margin: 1%;
+                float: left;
+                width: 96.5%;
+                margin: 1% 2%;
                 font-size: 1.4em;
                 border-bottom: 1px solid $med-grey;
             }
-            background-color: $dk-grey;
             >div {
-                margin: 1%;
+                width: 96%;
+                float: left;
+                margin: 0% 2% 1% 2%;
+                >span {
+                    margin-bottom: 1%;
+                    width: 100%;
+                }
             }
+        }
+    }
+}
+
+.life-map {
+    width: 92vw;
+    height: 61vw;
+}
+
+.grid-content {
+    >div {
+        float: left;
+        >div {
+            float: left;
+            display: inline-block;
+            margin: 1.5vh 1.5vw;
+            width: 45vw;
+            height: 45vh;
+            background-color: $dk-grey;
+            text-align: center;
+            font-size: 3em;
         }
     }
 }
