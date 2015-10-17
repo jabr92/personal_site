@@ -1,10 +1,46 @@
-body{
-	margin: 0;
-	height: 120vh;
+@import "colors";
+body {
+    margin: 0;
+    height: 120vh;
+    background-color: $teal;
+    color: $white;
 }
 
-.main_img{
-	height: 100%;
-	position: fixed;
-	left: calc()
+.main_img {
+    height: 100%;
+    position: fixed;
+}
+
+.name_header {
+    position: fixed;
+    top: 57vh;
+    height: 20vh;
+    width: 100vw;
+    text-align: center;
+    white-space: nowrap;
+    font-family: nunito, sans;
+}
+
+.buttons {
+    position: absolute;
+    top: 100vh;
+    >a {
+        color: inherit;
+        >div {
+            display: inline-block;
+            float: left;
+            text-align: center;
+            width: 22vw;
+            height: 26vh;
+            background-color: $dk-grey;
+            border-radius: 20%;
+            margin: 1vw;
+            font-size: 1.5em;
+            >i {
+            	font-size: 2em;
+                margin-top: 35%;
+                padding: 5px;
+            }
+        }
+    }
 }

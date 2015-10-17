@@ -1,10 +1,8 @@
-$dk-grey: #2B2B2B;
-$med-grey: lighten($dk-grey, 15%);
-$white: #77BA99;
-$teal: #009B9B;
+@import "colors";
+
 body {
     background-color: #009B9B;
-    color: #EFFFFE;
+    color: $white;
     font-family: nunito, sans-serif;
     margin: 1%;
     font-size: 1em;

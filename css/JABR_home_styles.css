@@ -1,10 +1,40 @@
 body {
   margin: 0;
-  height: 120vh; }
+  height: 120vh;
+  background-color: #009B9B;
+  color: #EFFFFE; }
 
 .main_img {
   height: 100%;
+  position: fixed; }
+
+.name_header {
   position: fixed;
-  left: calc(); }
+  top: 57vh;
+  height: 20vh;
+  width: 100vw;
+  text-align: center;
+  white-space: nowrap;
+  font-family: nunito, sans; }
+
+.buttons {
+  position: absolute;
+  top: 100vh; }
+  .buttons > a {
+    color: inherit; }
+    .buttons > a > div {
+      display: inline-block;
+      float: left;
+      text-align: center;
+      width: 22vw;
+      height: 26vh;
+      background-color: #2B2B2B;
+      border-radius: 20%;
+      margin: 1vw;
+      font-size: 1.5em; }
+      .buttons > a > div > i {
+        font-size: 2em;
+        margin-top: 35%;
+        padding: 5px; }
 
 /*# sourceMappingURL=JABR_home_styles.css.map */
