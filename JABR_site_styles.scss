@@ -3,7 +3,7 @@ body {
     background-color: #009B9B;
     color: $white;
     font-family: nunito, sans-serif;
-    margin: 1%;
+    margin: 1vw;
     font-size: 1em;
 }
 
@@ -16,7 +16,7 @@ span {
 }
 
 a {
-    color: $teal;
+    color: lighten($teal, 15%);
     text-decoration: none;
 }
 
@@ -36,19 +36,60 @@ ul {
     z-index: 10;
     position: relative;
     margin-bottom: 1%;
+    box-shadow: 1px 1px 3px darken($dk-grey, 15%);
+    >div {
+        float: left;
+        width: 100%;
+        height: 100%;
+        border-radius: .5em;
+        margin: 1px 0 0 1px;
+        border-left: 1px solid $med-grey;
+        border-top: 1px solid $med-grey;
+        >a {
+            color: inherit !important;
+            &:hover {
+                >div {
+                    >u {
+                        border-bottom: 1px solid $med-grey;
+                    }
+                }
+            }
+            &:active {
+                >div {
+                    >u {
+                        border-bottom: 1px solid $dk-grey;
+                    }
+                }
+            }
+            >div {
+                >u {
+                    text-decoration: none !important;
+                }
+            }
+        }
+    }
 }
 
 .name-title {
     float: left;
     line-height: calc(7vh * .9);
-    width: 30%;
-    height: (7vh * .9);
-    margin-left: 1%;
+    width: 28.5vw;
+    height: 100%;
+    text-shadow: 2px 2px black;
+    border-top-right-radius: 4px;
+    border-bottom-left-radius: 4px;
+    padding-left: 1vw;
+    &:active {
+        background-color: $med-grey !important;
+    }
+    &:hover {
+        background-color: darken($dk-grey, 5%);
+    }
 }
 
 .top-button {
     height: 100%;
-    width: 17%;
+    width: 16.4vw;
     text-align: center;
     line-height: calc(7vh * .9);
     float: left;
@@ -62,8 +103,14 @@ ul {
     }
 }
 
+.connect-btn {
+    padding-right: 1vw;
+    float: right;
+}
+
 .wide-content {
     >div {
+        overflow: hidden;
         float: left;
         margin-bottom: 1%;
         width: 100%;
@@ -72,20 +119,30 @@ ul {
             float: left;
             margin-bottom: 1%;
             background-color: $dk-grey;
-            >span {
-                float: left;
-                width: 96.5%;
-                margin: 1% 2%;
-                font-size: 1.4em;
-                border-bottom: 1px solid $med-grey;
-            }
+            box-shadow: 1px 1px 3px darken($dk-grey, 15%);
             >div {
-                width: 96%;
                 float: left;
-                margin: 0% 2% 1% 2%;
+                width: 100%;
+                height: 100%;
+                border-radius: .5em;
+                margin: 1px 0 0 1px;
+                border-left: 1px solid $med-grey;
+                border-top: 1px solid $med-grey;
                 >span {
-                    margin-bottom: 1%;
-                    width: 100%;
+                    float: left;
+                    width: 96.5%;
+                    margin: .5% 2%;
+                    font-size: 1.4em;
+                    border-bottom: 1px solid $med-grey;
+                }
+                >div {
+                    width: 96%;
+                    float: left;
+                    margin: 0% 2% 1% 2%;
+                    >span {
+                        margin-bottom: 1%;
+                        width: 100%;
+                    }
                 }
             }
         }
@@ -94,21 +151,40 @@ ul {
 
 .life-map {
     width: 92vw;
-    height: 61vw;
+    height: 80vh;
 }
 
 .grid-content {
     >div {
         float: left;
-        >div {
-            float: left;
-            display: inline-block;
-            margin: 1.5vh 1.5vw;
-            width: 45vw;
-            height: 45vh;
-            background-color: $dk-grey;
-            text-align: center;
-            font-size: 3em;
+        >a {
+            &:hover {
+                color: $white;
+            }
+            >div {
+                float: left;
+                display: inline-block;
+                margin: 1.5vh 1.5vw;
+                width: 45vw;
+                height: 45vh;
+                background-color: $dk-grey;
+                text-align: center;
+                font-size: 3em;
+                box-shadow: 1px 1px 3px darken($dk-grey, 15%);
+                >div {
+                    float: left;
+                    width: 100%;
+                    height: 100%;
+                    border-radius: .5em;
+                    margin: 1px 0 0 1px;
+                    border-left: 1px solid $med-grey;
+                    border-top: 1px solid $med-grey;
+                }
+                >i {
+                    margin-left: 14px;
+                    font-size: 2.5em;
+                }
+            }
         }
     }
 }

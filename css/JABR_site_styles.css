@@ -2,7 +2,7 @@ body {
   background-color: #009B9B;
   color: #EFFFFE;
   font-family: nunito, sans-serif;
-  margin: 1%;
+  margin: 1vw;
   font-size: 1em; }
 
 div {
@@ -12,7 +12,7 @@ span {
   white-space: nowrap; }
 
 a {
-  color: #009B9B;
+  color: #00e7e8;
   text-decoration: none; }
 
 p {
@@ -28,18 +28,42 @@ ul {
   height: 7vh;
   z-index: 10;
   position: relative;
-  margin-bottom: 1%; }
+  margin-bottom: 1%;
+  box-shadow: 1px 1px 3px #050505; }
+  .top-bar > div {
+    float: left;
+    width: 100%;
+    height: 100%;
+    border-radius: .5em;
+    margin: 1px 0 0 1px;
+    border-left: 1px solid #515151;
+    border-top: 1px solid #515151; }
+    .top-bar > div > a {
+      color: inherit !important; }
+      .top-bar > div > a:hover > div > u {
+        border-bottom: 1px solid #515151; }
+      .top-bar > div > a:active > div > u {
+        border-bottom: 1px solid #2B2B2B; }
+      .top-bar > div > a > div > u {
+        text-decoration: none !important; }
 
 .name-title {
   float: left;
   line-height: calc(7vh * .9);
-  width: 30%;
-  height: 6.3vh;
-  margin-left: 1%; }
+  width: 28.5vw;
+  height: 100%;
+  text-shadow: 2px 2px black;
+  border-top-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+  padding-left: 1vw; }
+  .name-title:active {
+    background-color: #515151 !important; }
+  .name-title:hover {
+    background-color: #1e1e1e; }
 
 .top-button {
   height: 100%;
-  width: 17%;
+  width: 16.4vw;
   text-align: center;
   line-height: calc(7vh * .9);
   float: left;
@@ -50,7 +74,12 @@ ul {
   .top-button:hover {
     background-color: #1e1e1e; }
 
+.connect-btn {
+  padding-right: 1vw;
+  float: right; }
+
 .wide-content > div {
+  overflow: hidden;
   float: left;
   margin-bottom: 1%;
   width: 100%; }
@@ -58,28 +87,39 @@ ul {
     width: 100%;
     float: left;
     margin-bottom: 1%;
-    background-color: #2B2B2B; }
-    .wide-content > div > div > span {
-      float: left;
-      width: 96.5%;
-      margin: 1% 2%;
-      font-size: 1.4em;
-      border-bottom: 1px solid #515151; }
+    background-color: #2B2B2B;
+    box-shadow: 1px 1px 3px #050505; }
     .wide-content > div > div > div {
-      width: 96%;
       float: left;
-      margin: 0% 2% 1% 2%; }
+      width: 100%;
+      height: 100%;
+      border-radius: .5em;
+      margin: 1px 0 0 1px;
+      border-left: 1px solid #515151;
+      border-top: 1px solid #515151; }
       .wide-content > div > div > div > span {
-        margin-bottom: 1%;
-        width: 100%; }
+        float: left;
+        width: 96.5%;
+        margin: .5% 2%;
+        font-size: 1.4em;
+        border-bottom: 1px solid #515151; }
+      .wide-content > div > div > div > div {
+        width: 96%;
+        float: left;
+        margin: 0% 2% 1% 2%; }
+        .wide-content > div > div > div > div > span {
+          margin-bottom: 1%;
+          width: 100%; }
 
 .life-map {
   width: 92vw;
-  height: 61vw; }
+  height: 80vh; }
 
 .grid-content > div {
   float: left; }
-  .grid-content > div > div {
+  .grid-content > div > a:hover {
+    color: #EFFFFE; }
+  .grid-content > div > a > div {
     float: left;
     display: inline-block;
     margin: 1.5vh 1.5vw;
@@ -87,7 +127,19 @@ ul {
     height: 45vh;
     background-color: #2B2B2B;
     text-align: center;
-    font-size: 3em; }
+    font-size: 3em;
+    box-shadow: 1px 1px 3px #050505; }
+    .grid-content > div > a > div > div {
+      float: left;
+      width: 100%;
+      height: 100%;
+      border-radius: .5em;
+      margin: 1px 0 0 1px;
+      border-left: 1px solid #515151;
+      border-top: 1px solid #515151; }
+    .grid-content > div > a > div > i {
+      margin-left: 14px;
+      font-size: 2.5em; }
 
 .placeholder {
   width: 20%;

@@ -16,7 +16,7 @@ $(window).resize(function() {
 
 var center_button_texts = function(){
 	divs = $(".buttons").children().children();
-    $("i").css("margin-top", (divs.height() - $("i").height() - divs.children().filter("span").height())/2);
+    $("i").css("margin-top", (divs.height() - $("i").height() - divs.children().children().filter("span").height())/2);
 }
 
 var scale_image = function() {

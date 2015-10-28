@@ -9,27 +9,50 @@
     <link rel="stylesheet" type="text/css" href="css/JABR_home_styles.css">
     <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
     <script src="home_scripts.js"></script>
+    <script>
+    (function(i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r;
+        i[r] = i[r] || function() {
+            (i[r].q = i[r].q || []).push(arguments)
+        }, i[r].l = 1 * new Date();
+        a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0];
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+    ga('create', 'UA-69012549-1', 'auto');
+    ga('send', 'pageview');
+    </script>
 </head>
 
 <body>
     <img class="main_img" src="images/jmt_panorama_11.jpg" title="Evolution Basin, Kings Canyon National Park"></img>
     <div class="name_header"><span>John Arin B. Ransom</span></div>
     <div class="buttons">
-        <a href="temp.html">
-            <div><i class="fa fa-user"></i>
-                <br><span>About</span></div>
+        <a href="main.html?about">
+            <div>
+                <div><i class="fa fa-user"></i>
+                    <br><span>About</span></div>
+            </div>
+        </a>
+        <a href="main.html?stuff">
+            <div>
+                <div><i class="fa fa-database"></i><i class="fa fa-map-pin"></i>
+                    <br><span>Cool Stuff</span></div>
+            </div>
         </a>
         <a href="temp.html">
-            <div><i class="fa fa-database"></i><i class="fa fa-map-pin"></i>
-                <br><span>Cool Stuff</span></div>
+            <div class="grey">
+                <div><i class="fa fa-camera"></i>
+                    <br><span>Photography (Coming Soon)</span></div>
+            </div>
         </a>
-        <a href="temp.html">
-            <div><i class="fa fa-camera"></i>
-                <br><span>Photography</span></div>
-        </a>
-        <a href="temp.html">
-            <div><i class="fa fa-exchange"></i>
-                <br><span>Connect</span></div>
+        <a href="main.html?connect">
+            <div>
+                <div><i class="fa fa-exchange"></i>
+                    <br><span>Connect</span></div>
+            </div>
         </a>
     </div>
 </body>

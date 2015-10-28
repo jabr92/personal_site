@@ -4,18 +4,22 @@ body {
   background-color: #009B9B;
   color: #EFFFFE; }
 
+.grey {
+  color: grey; }
+
 .main_img {
   height: 100%;
   position: fixed; }
 
 .name_header {
   position: fixed;
-  top: 57vh;
+  top: 56vh;
   height: 20vh;
   width: 100vw;
   text-align: center;
   white-space: nowrap;
-  font-family: nunito, sans; }
+  font-family: nunito, sans;
+  text-shadow: 2px 2px black; }
 
 .buttons {
   position: absolute;
@@ -33,10 +37,18 @@ body {
       background-color: #2B2B2B;
       border-radius: 20%;
       margin: 1vw;
-      font-size: 1.5em; }
-      .buttons > a > div > i {
-        font-size: 2em;
-        margin-top: 35%;
-        padding: 5px; }
+      font-size: 1.5em;
+      box-shadow: 1px 1px 3px #050505; }
+      .buttons > a > div > div {
+        width: 99%;
+        height: 99%;
+        border-radius: 20%;
+        margin: 1px 0 0 1px;
+        border-left: 1px solid #515151;
+        border-top: 1px solid #515151; }
+        .buttons > a > div > div > i {
+          font-size: 2em;
+          margin-top: 35%;
+          padding: 5px; }
 
 /*# sourceMappingURL=JABR_home_styles.css.map */
