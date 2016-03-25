@@ -1,6 +1,7 @@
 @import "colors";
+@import "home_styles";
 body {
-    background-color: #009B9B;
+    background-color: $teal;
     color: $white;
     font-family: nunito, sans-serif;
     margin: 1vw;
@@ -46,6 +47,7 @@ ul {
         border-left: 1px solid $med-grey;
         border-top: 1px solid $med-grey;
         >a {
+            float: left;
             color: inherit !important;
             &:hover {
                 >div {
@@ -73,7 +75,6 @@ ul {
 .name-title {
     float: left;
     line-height: calc(7vh * .9);
-    width: 28.5vw;
     height: 100%;
     text-shadow: 2px 2px black;
     border-top-right-radius: 4px;
@@ -101,11 +102,6 @@ ul {
     &:hover {
         background-color: darken($dk-grey, 5%);
     }
-}
-
-.connect-btn {
-    padding-right: 1vw;
-    float: right;
 }
 
 .wide-content {

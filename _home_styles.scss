@@ -1,0 +1,75 @@
+@import "colors";
+body {
+    margin: 0;
+    height: 120vh;
+    background-color: $teal !important;
+    color: $white !important;
+}
+
+.grey {
+    color: grey;
+}
+
+.main_img {
+    height: 100%;
+    position: fixed;
+    left: 0;
+}
+
+.name_header {
+    position: absolute;
+    top: 58vh;
+    height: 15vh;
+    width: 100%;
+    text-align: center;
+    white-space: nowrap;
+    font-family: nunito, sans;
+    text-shadow: 2px 2px black;
+    font-size: 1.5em;
+}
+
+.buttons {
+    width: 100%;
+    position: absolute;
+    top: 100vh;
+    height: 42vh;
+    >div {
+        >a {
+            float: left;
+            margin-top: 2vh;
+            color: inherit;
+            &:hover {
+                color: $teal;
+            }
+            >div {
+                width: 98%;
+                height: 39vh;
+                margin: 0 1%;
+                display: inline-block;
+                text-align: center;
+                background-color: $dk-grey;
+                border-radius: 20px;
+                font-size: 1.5em;
+                box-shadow: 1px 1px 3px darken($dk-grey, 15%);
+                >div {
+                    width: 99%;
+                    height: 99%;
+                    border-radius: 20px;
+                    margin: 1px 0 0 1px;
+                    border-left: 1px solid $med-grey;
+                    border-top: 1px solid $med-grey;
+                    >i {
+                        font-size: 2em;
+                        padding: 5px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 48em){
+    .buttons{
+        height: 20vh !important;
+    }
+}

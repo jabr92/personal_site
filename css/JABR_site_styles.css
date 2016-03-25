@@ -1,5 +1,65 @@
 body {
-  background-color: #009B9B;
+  margin: 0;
+  height: 120vh;
+  background-color: #00b5b5 !important;
+  color: #EFFFFE !important; }
+
+.grey {
+  color: grey; }
+
+.main_img {
+  height: 100%;
+  position: fixed;
+  left: 0; }
+
+.name_header {
+  position: absolute;
+  top: 58vh;
+  height: 15vh;
+  width: 100%;
+  text-align: center;
+  white-space: nowrap;
+  font-family: nunito, sans;
+  text-shadow: 2px 2px black;
+  font-size: 1.5em; }
+
+.buttons {
+  width: 100%;
+  position: absolute;
+  top: 100vh;
+  height: 42vh; }
+  .buttons > div > a {
+    float: left;
+    margin-top: 2vh;
+    color: inherit; }
+    .buttons > div > a:hover {
+      color: #00b5b5; }
+    .buttons > div > a > div {
+      width: 98%;
+      height: 39vh;
+      margin: 0 1%;
+      display: inline-block;
+      text-align: center;
+      background-color: #2B2B2B;
+      border-radius: 20px;
+      font-size: 1.5em;
+      box-shadow: 1px 1px 3px #050505; }
+      .buttons > div > a > div > div {
+        width: 99%;
+        height: 99%;
+        border-radius: 20px;
+        margin: 1px 0 0 1px;
+        border-left: 1px solid #515151;
+        border-top: 1px solid #515151; }
+        .buttons > div > a > div > div > i {
+          font-size: 2em;
+          padding: 5px; }
+
+@media (max-width: 48em) {
+  .buttons {
+    height: 20vh !important; } }
+body {
+  background-color: #00b5b5;
   color: #EFFFFE;
   font-family: nunito, sans-serif;
   margin: 1vw;
@@ -12,7 +72,7 @@ span {
   white-space: nowrap; }
 
 a {
-  color: #00e7e8;
+  color: #02ffff;
   text-decoration: none; }
 
 p {
@@ -39,6 +99,7 @@ ul {
     border-left: 1px solid #515151;
     border-top: 1px solid #515151; }
     .top-bar > div > a {
+      float: left;
       color: inherit !important; }
       .top-bar > div > a:hover > div > u {
         border-bottom: 1px solid #515151; }
@@ -50,7 +111,6 @@ ul {
 .name-title {
   float: left;
   line-height: calc(7vh * .9);
-  width: 28.5vw;
   height: 100%;
   text-shadow: 2px 2px black;
   border-top-right-radius: 4px;
@@ -73,10 +133,6 @@ ul {
     background-color: #515151 !important; }
   .top-button:hover {
     background-color: #1e1e1e; }
-
-.connect-btn {
-  padding-right: 1vw;
-  float: right; }
 
 .wide-content > div {
   overflow: hidden;
