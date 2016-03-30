@@ -52,16 +52,30 @@
           border-top: 1px solid #515151;
           text-align: center;
           margin: auto; }
+          .buttons > div > a > div > div .fa {
+            position: relative;
+            left: 4px; }
           .buttons > div > a > div > div > i {
             margin-top: 11vh;
             font-size: 10vh;
             padding: 5px; }
+          .buttons > div > a > div > div span {
+            font-size: 6vh; }
 
-@media screen and (max-width: 48em) {
+@media screen and (max-width: 47.5em) {
   .buttons div a {
     height: 33% !important; }
-    .buttons div a div div i {
-      font-size: 4vh; } }
+    .buttons div a div {
+      width: 80%;
+      margin: 2% 10%; }
+      .buttons div a div div i {
+        margin-top: 1.5vh;
+        font-size: 4vh; }
+      .buttons div a div div span {
+        font-size: 3vh; }
+      .buttons div a div div .connect-text {
+        position: relative;
+        top: -5px; } }
 body {
   background-color: #00b5b5;
   color: #EFFFFE;
@@ -95,7 +109,7 @@ ul {
   height: 7vh;
   z-index: 10;
   position: relative;
-  margin-bottom: 1%;
+  margin-bottom: 2vh;
   box-shadow: 1px 1px 3px #050505; }
   .top-bar > div {
     width: 100%;
@@ -120,12 +134,12 @@ ul {
 .wide-content > div {
   overflow: hidden;
   float: left;
-  margin-bottom: 1%;
+  margin-bottom: 2vh;
   width: 100%; }
   .wide-content > div > div {
     width: 100%;
     float: left;
-    margin-bottom: 1%;
+    margin-bottom: 2vh;
     background-color: #2B2B2B;
     box-shadow: 1px 1px 3px #050505; }
     .wide-content > div > div > div {

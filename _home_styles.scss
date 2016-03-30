@@ -57,10 +57,17 @@
                     border-top: 1px solid $med-grey;
                     text-align: center;
                     margin: auto;
+                    .fa{
+                        position: relative;
+                        left: 4px;
+                    }
                     >i {
                         margin-top: 11vh;
                         font-size: 10vh;
                         padding: 5px;
+                    }
+                    span{
+                        font-size: 6vh;
                     }
                 }
             }
@@ -68,15 +75,25 @@
     }
 }
 
-@media screen and (max-width: 48em) {
+@media screen and (max-width: 47.5em) {
     .buttons {
         div {
             a {
                 height: 33% !important;
-                div{
+                div{    
+                    width: 80%;
+                    margin: 2% 10%;
                     div{
                         i{
+                            margin-top: 1.5vh;
                             font-size: 4vh;
+                        }
+                        span{
+                            font-size: 3vh;
+                        }
+                        .connect-text{
+                            position: relative;
+                            top: -5px;
                         }
                     }
                 }

@@ -40,7 +40,7 @@ ul {
     height: 7vh;
     z-index: 10;
     position: relative;
-    margin-bottom: 1%;
+    margin-bottom: 2vh;
     box-shadow: 1px 1px 3px darken($dk-grey, 15%);
     >div {
         width: 100%;
@@ -71,12 +71,12 @@ ul {
     >div {
         overflow: hidden;
         float: left;
-        margin-bottom: 1%;
+        margin-bottom: 2vh;
         width: 100%;
         >div {
             width: 100%;
             float: left;
-            margin-bottom: 1%;
+            margin-bottom: 2vh;
             background-color: $dk-grey;
             box-shadow: 1px 1px 3px darken($dk-grey, 15%);
             >div {
