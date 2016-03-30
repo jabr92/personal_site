@@ -31,35 +31,31 @@
 </head>
 
 <body>
-    <!-- <img class="main_img" src="http://d361ywk3ruj2p5.cloudfront.net/jmt_panorama_11.jpg" title="Evolution Basin, Kings Canyon National Park">Panorama overlooking the southern end of Evolution Lake in King's Canyon National Park.</img> -->
-    <img class="main_img" src="images/jmt_panorama_11.jpg" title="Evolution Basin, Kings Canyon National Park"></img>
-    <div class="name_header"><span>John Arin B. Ransom</span></div>
-    <div class="buttons">
-        <div class="pure-g-r">
-            <a href="main.html?about" class="pure-u-1 pure-u-md-1-2 pure-u-lg-1-4">
-                <div>
-                    <div><i class="fa fa-user"></i>
-                        <br><span>About</span></div>
-                </div>
-            </a>
-            <a href="main.html?stuff" class="pure-u-1 pure-u-md-1-2 pure-u-lg-1-4">
-                <div>
-                    <div><i class="fa fa-database"></i><i class="fa fa-map-pin"></i>
-                        <br><span>Cool Stuff</span></div>
-                </div>
-            </a>
-            <a href="temp.html" class="pure-u-1 pure-u-md-1-2 pure-u-lg-1-4">
-                <div class="grey">
-                    <div><i class="fa fa-camera"></i>
-                        <br><span>Photography (Coming Soon)</span></div>
-                </div>
-            </a>
-            <a href="main.html?connect" class="pure-u-1 pure-u-md-1-2 pure-u-lg-1-4">
-                <div>
-                    <div><i class="fa fa-exchange"></i>
-                        <br><span>Connect</span></div>
-                </div>
-            </a>
+    <div class="home-content">
+        <!-- <img class="main_img" src="http://d361ywk3ruj2p5.cloudfront.net/jmt_panorama_11.jpg" title="Evolution Basin, Kings Canyon National Park">Panorama overlooking the southern end of Evolution Lake in King's Canyon National Park.</img> -->
+        <img class="main_img" src="images/jmt_panorama_11.jpg" title="Evolution Basin, Kings Canyon National Park"></img>
+        <div class="name_header"><span>John Arin B. Ransom</span></div>
+        <div class="buttons">
+            <div class="pure-g-r">
+                <a href="main.html?about" class="pure-u-1 pure-u-md-1-3">
+                    <div>
+                        <div><i class="fa fa-user"></i>
+                            <br><span>About</span></div>
+                    </div>
+                </a>
+                <a href="main.html?stuff" class="pure-u-1 pure-u-md-1-3">
+                    <div>
+                        <div><i class="fa fa-database"></i><i class="fa fa-map-pin"></i>
+                            <br><span>Cool Stuff</span></div>
+                    </div>
+                </a>
+                <a href="main.html?connect" class="pure-u-1 pure-u-md-1-3">
+                    <div>
+                        <div><i class="fa fa-exchange"></i>
+                            <br><span>Connect</span></div>
+                    </div>
+                </a>
+            </div>
         </div>
     </div>
 </body>
@@ -68,7 +64,7 @@ $(document).ready(function() {
     adjust_sizes();
 
     $(window).resize(function() {
-        adjust_sizes();        
+        adjust_sizes();
     });
 
     $(window).scroll(function() {
@@ -77,15 +73,9 @@ $(document).ready(function() {
 
 });
 
-var adjust_sizes = function(){
+var adjust_sizes = function() {
     scale_image();
-    center_button_texts();
     adjustFontSize(".name_header", $(".name_header").height(), $(window).width() * .98)
-}
-
-var center_button_texts = function(){
-    divs = $(".buttons").children().children();
-    $("i").css("margin-top", (divs.height() - $("i").height() - divs.children().children().filter("span").height())/2);
 }
 
 var scale_image = function() {

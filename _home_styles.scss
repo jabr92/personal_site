@@ -1,23 +1,17 @@
 @import "colors";
-body {
-    margin: 0;
-    height: 120vh;
-    background-color: $teal !important;
-    color: $white !important;
-}
-
-.grey {
-    color: grey;
+.home-content {
+    height: 142vh;
 }
 
 .main_img {
     height: 100%;
     position: fixed;
     left: 0;
+    top: 0;
 }
 
 .name_header {
-    position: absolute;
+    position: relative;
     top: 58vh;
     height: 15vh;
     width: 100%;
@@ -31,20 +25,23 @@ body {
 .buttons {
     width: 100%;
     position: absolute;
-    top: 100vh;
+    top: 115vh;
     height: 42vh;
     >div {
+        height: 100%;
         >a {
+            height: 100%;
             float: left;
-            margin-top: 2vh;
+            margin: 0;
+            padding: 0;
             color: inherit;
             &:hover {
                 color: $teal;
             }
             >div {
-                width: 98%;
-                height: 39vh;
-                margin: 0 1%;
+                width: 96%;
+                height: 96%;
+                margin: 2%;
                 display: inline-block;
                 text-align: center;
                 background-color: $dk-grey;
@@ -58,8 +55,11 @@ body {
                     margin: 1px 0 0 1px;
                     border-left: 1px solid $med-grey;
                     border-top: 1px solid $med-grey;
+                    text-align: center;
+                    margin: auto;
                     >i {
-                        font-size: 2em;
+                        margin-top: 11vh;
+                        font-size: 10vh;
                         padding: 5px;
                     }
                 }
@@ -68,8 +68,19 @@ body {
     }
 }
 
-@media (max-width: 48em){
-    .buttons{
-        height: 20vh !important;
+@media screen and (max-width: 48em) {
+    .buttons {
+        div {
+            a {
+                height: 33% !important;
+                div{
+                    div{
+                        i{
+                            font-size: 4vh;
+                        }
+                    }
+                }
+            }
+        }
     }
 }
