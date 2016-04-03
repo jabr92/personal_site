@@ -8,7 +8,7 @@ body {
     font-size: 1em;
 }
 
-.main-content{
+.main-content {
     margin: 1%;
 }
 
@@ -38,6 +38,7 @@ ul {
 .top-bar {
     background-color: $dk-grey;
     height: 7vh;
+    min-height: 48px;
     z-index: 10;
     position: relative;
     margin-bottom: 2vh;
@@ -58,7 +59,8 @@ ul {
     text-shadow: 2px 2px black;
     border-top-right-radius: 4px;
     border-bottom-left-radius: 4px;
-    padding-left: 1vw;
+    padding-left: 2%;
+    color: white;
     &:active {
         background-color: $med-grey !important;
     }
@@ -114,9 +116,13 @@ ul {
 }
 
 .grid-content {
+    height: 80vh;
+    width: 100%;
     >div {
         float: left;
         >a {
+            width: 45vw;
+            height: 50%;
             &:hover {
                 color: $white;
             }
@@ -124,8 +130,8 @@ ul {
                 float: left;
                 display: inline-block;
                 margin: 1.5vh 1.5vw;
-                width: 45vw;
-                height: 45vh;
+                width: 100%;
+                height: 100%;
                 background-color: $dk-grey;
                 text-align: center;
                 font-size: 3em;
@@ -140,8 +146,12 @@ ul {
                     border-top: 1px solid $med-grey;
                 }
                 >i {
-                    margin-left: 14px;
-                    font-size: 2.5em;
+                    margin-top: 11vh;
+                    font-size: 10vh;
+                    padding: 5px;
+                }
+                span {
+                    font-size: 6vh;
                 }
             }
         }
@@ -176,6 +186,18 @@ ul {
     -webkit-font-smoothing: antialiased;
 }
 
+.menu-expanded {
+    padding-bottom: 7vh;
+}
+
+.pure-menu-item {
+    border-radius: 4px;
+    cursor: pointer;
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
 .custom-menu .pure-menu-link,
 .custom-menu .pure-menu-heading {
     color: white;
@@ -190,6 +212,19 @@ ul {
     position: relative;
     padding-top: .5em;
     padding-bottom: .5em;
+}
+
+.custom-menu-bottom {
+    border-radius: 0;
+    border: 0 !important;
+    float: right;
+    position: absolute;
+    top: 7vh;
+}
+
+.pure-menu-list {
+    float: right;
+    margin-right: 40px;
 }
 
 .custom-menu-brand {
@@ -265,16 +300,28 @@ ul {
 }
 
 @media (max-width: 62em) {
-
+    .grid-content {
+        >div {
+            >a {
+                >div {
+                    >div {}
+                    >i {
+                        font-size: 4vh;
+                    }
+                    span {
+                        font-size: 3vh;
+                    }
+                }
+            }
+        }
+    }
     .custom-menu {
         display: block;
     }
-
     .custom-menu-toggle {
         display: block;
         display: none\9;
     }
-
     .custom-menu-bottom {
         position: absolute;
         width: 100%;
@@ -282,7 +329,6 @@ ul {
         background-color: #808080\9;
         z-index: 100;
     }
-
     .custom-menu-bottom .pure-menu-link {
         opacity: 1;
         -webkit-transform: translateX(0);
@@ -294,7 +340,6 @@ ul {
         -ms-transition: all 0.5s;
         transition: all 0.5s;
     }
-
     .custom-menu-bottom.custom-menu-tucked .pure-menu-link {
         -webkit-transform: translateX(-140px);
         -moz-transform: translateX(-140px);
@@ -303,12 +348,10 @@ ul {
         opacity: 0;
         opacity: 1\9;
     }
-
     .pure-menu-horizontal.custom-menu-tucked {
         z-index: -1;
         top: 45px;
         position: absolute;
         overflow: hidden;
     }
-
 }

@@ -16,7 +16,7 @@
   white-space: nowrap;
   font-family: nunito, sans;
   text-shadow: 2px 2px black;
-  font-size: 1.5em; }
+  font-size: 5em; }
 
 .buttons {
   width: 100%;
@@ -63,6 +63,9 @@
             font-size: 6vh; }
 
 @media screen and (max-width: 47.5em) {
+  .name_header {
+    font-size: 2em; }
+
   .buttons div a {
     height: 33% !important; }
     .buttons div a div {
@@ -107,6 +110,7 @@ ul {
 .top-bar {
   background-color: #2B2B2B;
   height: 7vh;
+  min-height: 48px;
   z-index: 10;
   position: relative;
   margin-bottom: 2vh;
@@ -125,7 +129,8 @@ ul {
   text-shadow: 2px 2px black;
   border-top-right-radius: 4px;
   border-bottom-left-radius: 4px;
-  padding-left: 1vw; }
+  padding-left: 2%;
+  color: white; }
   .name-title:active {
     background-color: #515151 !important; }
   .name-title:hover {
@@ -168,31 +173,40 @@ ul {
   width: 92vw;
   height: 80vh; }
 
-.grid-content > div {
-  float: left; }
-  .grid-content > div > a:hover {
-    color: #EFFFFE; }
-  .grid-content > div > a > div {
-    float: left;
-    display: inline-block;
-    margin: 1.5vh 1.5vw;
-    width: 45vw;
-    height: 45vh;
-    background-color: #2B2B2B;
-    text-align: center;
-    font-size: 3em;
-    box-shadow: 1px 1px 3px #050505; }
-    .grid-content > div > a > div > div {
-      float: left;
-      width: 100%;
-      height: 100%;
-      border-radius: .5em;
-      margin: 1px 0 0 1px;
-      border-left: 1px solid #515151;
-      border-top: 1px solid #515151; }
-    .grid-content > div > a > div > i {
-      margin-left: 14px;
-      font-size: 2.5em; }
+.grid-content {
+  height: 80vh;
+  width: 100%; }
+  .grid-content > div {
+    float: left; }
+    .grid-content > div > a {
+      width: 45vw;
+      height: 50%; }
+      .grid-content > div > a:hover {
+        color: #EFFFFE; }
+      .grid-content > div > a > div {
+        float: left;
+        display: inline-block;
+        margin: 1.5vh 1.5vw;
+        width: 100%;
+        height: 100%;
+        background-color: #2B2B2B;
+        text-align: center;
+        font-size: 3em;
+        box-shadow: 1px 1px 3px #050505; }
+        .grid-content > div > a > div > div {
+          float: left;
+          width: 100%;
+          height: 100%;
+          border-radius: .5em;
+          margin: 1px 0 0 1px;
+          border-left: 1px solid #515151;
+          border-top: 1px solid #515151; }
+        .grid-content > div > a > div > i {
+          margin-top: 11vh;
+          font-size: 10vh;
+          padding: 5px; }
+        .grid-content > div > a > div span {
+          font-size: 6vh; }
 
 .placeholder {
   width: 20%;
@@ -218,6 +232,15 @@ ul {
   vertical-align: middle;
   -webkit-font-smoothing: antialiased; }
 
+.menu-expanded {
+  padding-bottom: 7vh; }
+
+.pure-menu-item {
+  border-radius: 4px;
+  cursor: pointer; }
+  .pure-menu-item:hover {
+    text-decoration: underline; }
+
 .custom-menu .pure-menu-link,
 .custom-menu .pure-menu-heading {
   color: white; }
@@ -230,6 +253,17 @@ ul {
   position: relative;
   padding-top: .5em;
   padding-bottom: .5em; }
+
+.custom-menu-bottom {
+  border-radius: 0;
+  border: 0 !important;
+  float: right;
+  position: absolute;
+  top: 7vh; }
+
+.pure-menu-list {
+  float: right;
+  margin-right: 40px; }
 
 .custom-menu-brand {
   display: block;
@@ -296,6 +330,11 @@ ul {
   transform: translateY(-44px); }
 
 @media (max-width: 62em) {
+  .grid-content > div > a > div > i {
+    font-size: 4vh; }
+  .grid-content > div > a > div span {
+    font-size: 3vh; }
+
   .custom-menu {
     display: block; }
 

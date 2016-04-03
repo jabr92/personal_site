@@ -4,7 +4,7 @@
 <head>
     <title>John Arin Ransom</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Main page for John Arin Ransom">
+    <meta name="description" content="Personal site for John Arin Ransom. Contains information about my personal life, education, and work expereince.">
     <meta name="keywords" content="John Arin, John Arin Ransom">
     <base target="_self">
     <link rel="shortcut icon" href="images/my_favicon.png">
@@ -32,10 +32,10 @@
 
 <body>
     <div class="main-content">
-        <div class="top-bar">
+        <div class="top-bar" id="menu-wrapper">
             <div class="custom-menu-wrapper">
                 <div class="pure-menu custom-menu custom-menu-top">
-                    <a href="home.html" class="name-toggle">John Arin B. Ransom</a>
+                    <a href="home.html" class="name-title">John Arin B. Ransom</a>
                     <a href="#" class="custom-menu-toggle" id="toggle">
                         <s class="bar"></s>
                         <s class="bar"></s>
@@ -54,6 +54,7 @@
         (function(window, document) {
             document.getElementById('toggle').addEventListener('click', function(e) {
                 document.getElementById('tuckedMenu').classList.toggle('custom-menu-tucked');
+                document.getElementById('menu-wrapper').classList.toggle('menu-expanded');
                 document.getElementById('toggle').classList.toggle('x');
             });
         })(this, this.document);
@@ -65,7 +66,7 @@
                     <div>
                         <span>Personal</span>
                         <div>
-                            <p>I usually introduce myself with an explanation: "John Arin. Both parts are my first name." I was born and raised in <a href="https://www.google.com/maps/place/Redding,+CA/@37.9721397,-119.8468708,6z/data=!4m2!3m1!1s0x54d291d63b4a202f:0x1f3358ec7b360f57" target="_blank">Redding, CA</a> then moved to the San Francisco Bay Area, where I still live, for college. My academic interests include the physical sciences, especially chemistry, and computers/technology. In addition to gaining and applying technical knowledge, I find satisfaction in exploring wilderness areas and preparing meals for those I love.
+                            <p>I usually introduce myself with an explanation: "John Arin. Both parts are my first name." I was born and raised in <a href="https://www.google.com/maps/place/Redding,+CA/@37.9721397,-119.8468708,6z/data=!4m2!3m1!1s0x54d291d63b4a202f:0x1f3358ec7b360f57" target="_blank">Redding, CA</a> then moved to the San Francisco Bay Area, where I still live, for college. My academic interests include computers/technology and the physical sciences, especially chemistry. In addition to gaining and applying technical knowledge, I find satisfaction in exploring wilderness areas and preparing meals for those I love.
                         </div>
                     </div>
                 </div>
@@ -73,10 +74,10 @@
                     <div>
                         <span>Experience</span>
                         <div>
-                            <p>My first job was with the <a href="http://ucpd.berkeley.edu/programsandservices/CSO/index.html" target="_blank">Community Service Officer (CSO) Program</a> of UCPD Berkeley. I helped ensure the safety of the UC Berkeley campus community starting with my boots on the ground and working my way up to serving as Administrative Program Coordinator for the final two and a half of my more than five years with the program.</p>
-                            <p>During my time at UC Berkeley I also worked in the <a href="https://www.nuc.berkeley.edu/research/nuclear-thermal-hydraulics" target="_blank">Thermal Hydraulics</a> laboratory of the Department of Nuclear Engineering. The goal of my project was to validate the emergency shutdown system for a next-generation nuclear reactor.</p>
-                            <p> Currently I work at <a href="http://he.net/about_network.html" target="_blank">Hurricane Electric</a>, an internet company which operates a global backbone network and hosts servers in Silicon Valley. My main responsibility is diagnosing and resolving customers' technical issues, but I spend the majority of my time programming. Every day I learn new things about how computers and the internet work.</p>
-                            <p>For examples of the prgramming projects I have done, check out my <a href="main.html?stuff">cool stuff</a> page.</p>
+                            <p>My first job was with the <a href="http://ucpd.berkeley.edu/programsandservices/CSO/index.html" target="_blank">Community Service Officer Program</a> of UCPD Berkeley. I helped ensure the safety of the UC Berkeley campus community starting with my boots on the ground and working up to serving as Administrative Program Coordinator for the final two and a half of my more than five years with the program.</p>
+                            <p>During my time at UC Berkeley I also worked in the <a href="https://www.nuc.berkeley.edu/research/nuclear-thermal-hydraulics" target="_blank">Thermal Hydraulics Laboratory</a> of the Department of Nuclear Engineering. The goal of my project was to validate an emergency shutdown system for a next-generation nuclear reactor.</p>
+                            <p> Currently I work at <a href="http://he.net/about_network.html" target="_blank">Hurricane Electric</a>, which operates a global internet backbone network and hosts servers in Silicon Valley. My main responsibility is diagnosing and resolving customers' technical issues, but I spend the majority of my time programming. Every day I learn new things about how computers and the internet work.</p>
+                            <p>For see some of the prgramming projects I have worked on, check out my <a href="main.html?stuff">cool stuff</a> page.</p>
                         </div>
                     </div>
                 </div>
@@ -84,8 +85,8 @@
                     <div>
                         <span>Education</span>
                         <div>
-                            <p>I spent my senior year of high school on the campus of my local community college, where I took courses in calculus, physics, and computer science.</p>
-                            <p>I studied chemistry at UC Berkeley,
+                            <p>I spent my senior year of high school on the campus of my local community college, where I took courses in calculus, physics, and computer science. My experiences there solidified my love of the physical sciences, but also piqued my interest in computers.</p>
+                            <p>I decided to study chemistry at UC Berkeley since it's easy to own a computer and purchase software, but hard to own a lab and purchase reagents. I completed 84% of courses for a B.S. in chemistry, but for now have decided to pursue a career in the Bay Area's prolific tech industry rather than complete my formal studies.</p>
                         </div>
                     </div>
                 </div>
@@ -95,7 +96,7 @@
                     <div>
                         <span>Tabd</span>
                         <div>
-                            <img src="https://tabdextension.com/images/logo.png"></img>
+                            <img class="tabd-logo" src="https://tabdextension.com/images/logo.png"></img>
                             <p><a href="http://tabdextension.com" target="_blank">Tabd</a> is a Chrome extension which lets you send the page you're looking at to friends with one click. It is currently available on the <a href="https://chrome.google.com/webstore/detail/tabd/gfijjccdjccoaaalhfkobmdaneellnba" target="_blank">Chrome Web Store</a>. I develop and maintain Tabd in coordination with my friend <a href="http://avi.press" target="_blank">Avi Press</a>.</p>
                         </div>
                     </div>
@@ -112,27 +113,27 @@
             </div>
         </div>
         <div class="grid-content">
-            <div class="connect" style="display:none;">
+            <div class="connect pure-g-r" style="display:none;">
                 <a href="https://www.facebook.com/johnarin.ransom" target="_blank">
-                    <div>
+                    <div class="pure-u-1 pure-u-md-1-2">
                         <div><i class="fa fa-facebook-square"></i>
                             <br><span>Facebook</span></div>
                     </div>
                 </a>
                 <a href="https://www.linkedin.com/in/jabr92" target="_blank">
-                    <div>
+                    <div class="pure-u-1 pure-u-md-1-2">
                         <div><i class="fa fa-linkedin-square"></i>
                             <br><span>LinkedIn</span></div>
                     </div>
                 </a>
                 <a href="https://github.com/jabr92" target="_blank">
-                    <div>
+                    <div class="pure-u-1 pure-u-md-1-2">
                         <div><i class="fa fa-github-square"></i>
                             <br><span>GitHub</span></div>
                     </div>
                 </a>
                 <a href="mailto:jabr92@gmail.com">
-                    <div>
+                    <div class="pure-u-1 pure-u-md-1-2">
                         <div><i class="fa fa-envelope"></i>
                             <br><span>Email</span></div>
                     </div>
@@ -143,6 +144,7 @@
     </div>
 </body>
 <script>
+// all these things are on one page because I don't want to pay AWS for excessive GET requests
 $(document).ready(function() {
     switch (location.search) {
         case "?about":
