@@ -109,8 +109,7 @@ ul {
 
 .top-bar {
   background-color: #2B2B2B;
-  height: 7vh;
-  min-height: 48px;
+  height: 48px;
   z-index: 10;
   position: relative;
   margin-bottom: 2vh;
@@ -124,12 +123,11 @@ ul {
 
 .name-title {
   float: left;
-  line-height: 6.3vh;
+  line-height: 48px;
   height: 100%;
   text-shadow: 2px 2px black;
-  border-top-right-radius: 4px;
-  border-bottom-left-radius: 4px;
-  padding-left: 2%;
+  border-radius: .5em;
+  padding: 0 2vw;
   color: white; }
   .name-title:active {
     background-color: #515151 !important; }
@@ -173,25 +171,27 @@ ul {
   width: 92vw;
   height: 80vh; }
 
+.tabd-gif {
+  width: 92vw; }
+
 .grid-content {
   height: 80vh;
   width: 100%; }
   .grid-content > div {
     float: left; }
     .grid-content > div > a {
-      width: 45vw;
-      height: 50%; }
+      margin-right: 2vw;
+      margin-left: 1vw; }
       .grid-content > div > a:hover {
         color: #EFFFFE; }
       .grid-content > div > a > div {
+        height: 40vh;
         float: left;
         display: inline-block;
         margin: 1.5vh 1.5vw;
         width: 100%;
-        height: 100%;
         background-color: #2B2B2B;
         text-align: center;
-        font-size: 3em;
         box-shadow: 1px 1px 3px #050505; }
         .grid-content > div > a > div > div {
           float: left;
@@ -201,12 +201,16 @@ ul {
           margin: 1px 0 0 1px;
           border-left: 1px solid #515151;
           border-top: 1px solid #515151; }
-        .grid-content > div > a > div > i {
+        .grid-content > div > a > div i {
+          margin-left: 8px;
           margin-top: 11vh;
           font-size: 10vh;
           padding: 5px; }
         .grid-content > div > a > div span {
           font-size: 6vh; }
+
+.connect {
+  width: 97%; }
 
 .placeholder {
   width: 20%;
@@ -233,13 +237,18 @@ ul {
   -webkit-font-smoothing: antialiased; }
 
 .menu-expanded {
-  padding-bottom: 7vh; }
+  padding-bottom: 48px; }
 
 .pure-menu-item {
+  float: right;
   border-radius: 4px;
   cursor: pointer; }
+  .pure-menu-item a u {
+    text-decoration: none; }
   .pure-menu-item:hover {
-    text-decoration: underline; }
+    background-color: #1e1e1e; }
+    .pure-menu-item:hover a u {
+      border-bottom: 1px solid #515151; }
 
 .custom-menu .pure-menu-link,
 .custom-menu .pure-menu-heading {
@@ -251,10 +260,15 @@ ul {
 
 .custom-menu-top {
   position: relative;
-  padding-top: .5em;
-  padding-bottom: .5em; }
+  top: 0;
+  height: 48px; }
 
 .custom-menu-bottom {
+  position: relative !important;
+  top: 0 !important;
+  padding: 0 !important;
+  height: 48px;
+  line-height: 31px;
   border-radius: 0;
   border: 0 !important;
   float: right;
@@ -329,11 +343,18 @@ ul {
   -ms-transform: translateY(-44px);
   transform: translateY(-44px); }
 
-@media (max-width: 62em) {
-  .grid-content > div > a > div > i {
-    font-size: 4vh; }
-  .grid-content > div > a > div span {
-    font-size: 3vh; }
+@media (max-width: 48em) {
+  .pure-menu-list {
+    width: calc(100% - 80px);
+    border-top: 1px solid grey; }
+
+  .grid-content > div > a > div {
+    height: 19vh; }
+    .grid-content > div > a > div > div > i {
+      margin-top: 1.5vh;
+      font-size: 7vh; }
+    .grid-content > div > a > div > div span {
+      font-size: 5vh; }
 
   .custom-menu {
     display: block; }
@@ -343,9 +364,10 @@ ul {
     display: none\9; }
 
   .custom-menu-bottom {
+    display: none;
     position: absolute;
     width: 100%;
-    border-top: 1px solid #eee;
+    border-top: 1px solid #515151;
     background-color: #808080 \9;
     z-index: 100; }
 
