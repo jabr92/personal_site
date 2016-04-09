@@ -264,16 +264,13 @@ ul {
   height: 48px; }
 
 .custom-menu-bottom {
-  position: relative !important;
-  top: 0 !important;
   padding: 0 !important;
   height: 48px;
   line-height: 31px;
   border-radius: 0;
   border: 0 !important;
-  float: right;
   position: absolute;
-  top: 7vh; }
+  right: 0; }
 
 .pure-menu-list {
   float: right;
