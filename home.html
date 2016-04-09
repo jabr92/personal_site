@@ -61,8 +61,12 @@
 </body>
 <script>
 $(document).ready(function() {
-    $(".main_img").css("left", 0);
-    adjust_sizes();
+    
+     adjust_sizes();
+
+    $(".main_img").load(function() {
+        adjust_sizes();
+    })
 
     $(window).resize(function() {
         adjust_sizes();
