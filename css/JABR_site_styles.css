@@ -1,11 +1,15 @@
 .home-content {
   height: 142vh; }
 
-.main_img {
+.main_img_wrapper {
   height: 100%;
   position: fixed;
   left: 0;
   top: 0; }
+  .main_img_wrapper img {
+    opacity: 0; }
+  .main_img_wrapper .loaded img {
+    opacity: 1; }
 
 .name_header {
   position: relative;
@@ -18,12 +22,11 @@
   text-shadow: 2px 2px black;
   font-size: 5em; }
 
-.scroll-indicator{
+.scroll-indicator {
   position: relative;
   top: 75vh;
   left: 50vw;
-  font-size: 50px;
-}
+  font-size: 50px; }
 
 .buttons {
   width: 100%;

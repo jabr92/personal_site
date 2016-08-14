@@ -28,11 +28,18 @@
     ga('create', 'UA-69012549-1', 'auto');
     ga('send', 'pageview');
     </script>
+    <script>
+    var main_img_load = function(img) {
+        $(img).parent().addClass('loaded');
+    }
+    </script>
 </head>
 
 <body>
     <div class="home-content">
-        <img class="main_img" src="http://d361ywk3ruj2p5.cloudfront.net/jmt_panorama_11.jpg" title="Evolution Basin, Kings Canyon National Park">Panorama overlooking the southern end of Evolution Lake in King's Canyon National Park.</img>
+        <div class="main=_img_wrapper">
+            <img class="main_img" onload="main_img_load(this)" src="http://d361ywk3ruj2p5.cloudfront.net/jmt_panorama_11.jpg" title="Evolution Basin, Kings Canyon National Park">Panorama overlooking the southern end of Evolution Lake, Kings Canyon National Park.</img>
+        </div>
         <div class="name_header"><span>John Arin B. Ransom</span></div>
         <i class="fa fa-chevron-down scroll-indicator"></i>
         <div class="buttons">
@@ -61,8 +68,8 @@
 </body>
 <script>
 $(document).ready(function() {
-    
-     adjust_sizes();
+
+    adjust_sizes();
 
     $(".main_img").load(function() {
         adjust_sizes();
