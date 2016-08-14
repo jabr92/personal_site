@@ -18,6 +18,13 @@
   text-shadow: 2px 2px black;
   font-size: 5em; }
 
+.scroll-indicator{
+  position: relative;
+  top: 75vh;
+  left: 50vw;
+  font-size: 50px;
+}
+
 .buttons {
   width: 100%;
   position: absolute;

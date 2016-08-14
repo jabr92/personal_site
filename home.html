@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
     <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Nunito&subset=latin,latin-ext'>
     <link rel="stylesheet" href="http://yui.yahooapis.com/combo?pure/0.6.0/pure-min.css&pure/0.6.0/grids-responsive-min.css">
-    <link rel="stylesheet" href="css/JABR_site_styles.css">
+    <link rel="stylesheet" href="http://d3bw9bqyfxf2gl.cloudfront.net/css/JABR_site_styles.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
     <script>
     (function(i, s, o, g, r, a, m) {
@@ -33,8 +33,8 @@
 <body>
     <div class="home-content">
         <img class="main_img" src="http://d361ywk3ruj2p5.cloudfront.net/jmt_panorama_11.jpg" title="Evolution Basin, Kings Canyon National Park">Panorama overlooking the southern end of Evolution Lake in King's Canyon National Park.</img>
-        <!-- <img class="main_img" src="images/jmt_panorama_11.jpg" title="Evolution Basin, Kings Canyon National Park"></img> -->
         <div class="name_header"><span>John Arin B. Ransom</span></div>
+        <i class="fa fa-chevron-down scroll-indicator"></i>
         <div class="buttons">
             <div class="pure-g-r">
                 <a href="main.html?about" class="pure-u-1 pure-u-md-1-3">
@@ -84,15 +84,19 @@ var adjust_sizes = function() {
 }
 
 var scale_image = function() {
-
     max_scroll = $(document).height() - $(window).height();
     cur_scroll = $(window).scrollTop();
     height = 100 - cur_scroll / max_scroll * 42;
     $(".main_img").css("height", height + "vh");
     left = ($(window).width() - $(".main_img").width()) / 2;
     $(".main_img").css("left", left);
-
+    if (cur_scroll === max_scroll){
+        $(".scroll-indicator").hide();
+    } else {
+        $(".scroll-indicator").show();
+    }
 }
+
 var adjustFontSize = function(el, max_height, max_width) {
     text = $(el).children().filter("span");
     text.css('font-size', 100);
