@@ -4,16 +4,17 @@
 }
 
 .main_img_wrapper {
-    height: 100%;
-    position: fixed;
-    left: 0;
-    top: 0;
     img {
+        position: fixed;
+        left: 0;
+        top: 0;
         opacity: 0;
+        transition: opacity 2s;
     }
-    .loaded img {
-        opacity: 1;
-    }
+}
+
+.loaded img {
+    opacity: 1;
 }
 
 .name_header {
@@ -28,11 +29,12 @@
     font-size: 5em;
 }
 
-.scroll-indicator{
+.scroll-indicator {
     position: relative;
     top: 75vh;
-    left: 50vw;
+    left: calc(50vw - 25px);
     font-size: 50px;
+    text-shadow: 3px 1px black;
 }
 
 .buttons {
